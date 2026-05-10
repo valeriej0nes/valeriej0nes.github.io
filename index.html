@@ -13,7 +13,10 @@
         --line: #ddd7cf;
         --accent: #2f6f73;
         --card: #ffffff;
-        --interactive: #7c3aed;
+        --approximation: #7c3aed;
+        --matrices: #0043bf;
+        --iteration: #2b6e1f;
+        --solvers: #78223d;
       }
 
       * {
@@ -123,7 +126,46 @@
         margin-top: 1px;
         padding: 4px 9px;
         border-radius: 999px;
-        background: var(--badge-color, var(--interactive));
+        background: var(--badge-color, var(--approximation));
+        color: #ffffff;
+        font-size: 0.75rem;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      .project-badge {
+        flex: 0 0 auto;
+        display: inline-flex;
+        margin-top: 1px;
+        padding: 4px 9px;
+        border-radius: 999px;
+        background: var(--badge-color, var(--matrices));
+        color: #ffffff;
+        font-size: 0.75rem;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      .project-badge {
+        flex: 0 0 auto;
+        display: inline-flex;
+        margin-top: 1px;
+        padding: 4px 9px;
+        border-radius: 999px;
+        background: var(--badge-color, var(--iteration));
+        color: #ffffff;
+        font-size: 0.75rem;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      .project-badge {
+        flex: 0 0 auto;
+        display: inline-flex;
+        margin-top: 1px;
+        padding: 4px 9px;
+        border-radius: 999px;
+        background: var(--badge-color, var(--solvers));
         color: #ffffff;
         font-size: 0.75rem;
         font-weight: 700;
@@ -187,30 +229,30 @@
         {
           name: "Geometric Tracing",
           url: "geometric-tracing/",
-          description: "An interactive tool that converts images into mathematical curve representations using piecewise linear and parametric B-spline approximation",
-          badge: "Interactive",
-          badgeColor: "var(--interactive)",
+          description: "An interactive tool that converts images into mathematical curve representations using piecewise linear and parametric Catmull-Rom spline approximation",
+          badge: "Approximation",
+          badgeColor: "var(--approximation)",
         },
         {
           name: "Matrix Mapper",
           url: "matrix-mapper/",
           description: "An interactive tool for visualising how 2×2 matrices transform shapes through scaling, rotation, reflection and shear operations",
-          badge: "Interactive",
-          badgeColor: "var(--interactive)",
+          badge: "Matrices",
+          badgeColor: "var(--matrices)",
         },
         {
           name: "Dominant Eigenvector",
           url: "/dominant-eigenvector-visualisation/",
           description: "An interactive tool for visualising how repeated matrix multiplication converges to the dominant eigenvector of a matrix",
-          badge: "Interactive",
-          badgeColor: "var(--interactive)",
+          badge: "Iteration",
+          badgeColor: "var(--iteration)",
         },
         {
           name: "Jacobi vs Gauss-Seidel",
           url: "/jacobi-vs-gs/",
           description: "An interactive tool for comparing how Jacobi and Gauss-Seidel iterations converge toward the solution of a 2D linear system",
-          badge: "Interactive",
-          badgeColor: "var(--interactive)",
+          badge: "Solvers",
+          badgeColor: "var(--solvers)",
         },
       ];
 
